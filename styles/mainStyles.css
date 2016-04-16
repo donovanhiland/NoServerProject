@@ -1,0 +1,62 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+h3 {
+  font-size: 40px;
+  color: #CCCCCC;
+  margin-top: 7%;
+}
+
+.main-landing-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: block;
+  background:
+  linear-gradient(
+      rgba(0, 0, 0, 0.31),
+      rgba(0, 0, 0, 0.61)
+  ),
+  url('../img/background/croppedbrickbackground.jpg') center no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.main-landing-container div {
+  display: relative;
+  width: 90%;
+  margin: auto;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  font-size: 8vw;
+  font-weight: 700;
+}
+
+.main-page-about {
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  top: 100vh;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  background: white;
+}
+
+.main-page-portfolio {
+
+}
+
+.test {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 200vh;
+  background: darkgrey;
+}

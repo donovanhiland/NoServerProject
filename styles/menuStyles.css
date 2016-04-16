@@ -1,0 +1,170 @@
+/*.menu-toggle-container {
+  width: 40px;
+  height: 40px;
+  z-index: 4;
+  position: fixed;
+  right: 5%;
+  top: 7%;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  transition: all 1.5s;
+}*/
+
+.menu-toggle {
+  width: 40px;
+  height: 40px;
+  z-index: 4;
+  position: fixed;
+  right: 5%;
+  top: 7%;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+/*.expanded {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background: black;
+  opacity: .95;
+  border-radius: 0px;
+  transition: all 1.5s;
+}*/
+
+.menu-toggle:hover {
+  cursor: pointer;
+}
+
+.menu-toggle > div {
+  width: 50%;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu-toggle > div > div {
+  width: 100%;
+  height: .125em;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #FFF;
+  border-radius: 1px;
+  margin-bottom: 7px;
+  transition: transform .5s ease;
+}
+
+.menu-toggle > div > div:nth-child(1) {
+  transition: transform .5s ease;
+}
+
+.menu-toggle > div > div:nth-child(2) {
+  opacity: 1;
+  transition: opacity .35s;
+}
+
+.menu-toggle > div > div:nth-child(3) {
+  width: 100%;
+  transition: transform .5s ease;
+}
+
+.menu-toggle.open > div > div:nth-child(1) {
+  transform: translateY(9px) translateX(-50%) rotate(45deg);
+  transition: transform .5s ease;
+}
+
+.menu-toggle.open > div > div:nth-child(2) {
+  opacity: 0;
+  transition: opacity .35s;
+}
+
+.menu-toggle.open > div > div:nth-child(3) {
+  width: 100%;
+  transform: translateY(-9px) translateX(-50%) rotate(-45deg);
+  transition: transform .5s ease;
+}
+
+.menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background: black;
+  opacity: .95;
+}
+
+.link-container {
+  width: 75%;
+  height: 150px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  border-color: white;
+}
+
+.blurred {
+  color: grey;
+  border-color: grey;
+  transition: border .35s, color .5s;
+}
+
+.line {
+  height: 10px;
+  width: 35%;
+  display: inline-block;
+  border-top: .5px solid;
+  border-color: inherit;;
+  transform: translateY(8px);
+}
+
+.social-links-container {
+  height: 40px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.social-link {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: 1px solid lightgrey;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#githubicon {
+  background: url('../img/icons/github.png') center no-repeat;
+  background-size: contain;
+}
+
+#linkedinicon {
+  background: url('../img/icons/linkedin.png') center no-repeat;
+  background-size: contain;
+}
+
+#facebookicon {
+  background: url('../img/icons/facebook.png') center no-repeat;
+  background-size: contain;
+}
+
+#emailicon {
+  background: url('../img/icons/mail.png') center no-repeat;
+  background-size: contain;
+}
