@@ -5,7 +5,7 @@ angular.module('portfolioApp', ['ui.router'])
     $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: 'templates/mainTempl.html'
+        templateUrl: 'templates/mainTmpl.html'
       })
       .state('portfolio', {
         url: '/portfolio',
