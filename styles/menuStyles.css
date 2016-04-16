@@ -1,38 +1,14 @@
-/*.menu-toggle-container {
-  width: 40px;
-  height: 40px;
-  z-index: 4;
-  position: fixed;
-  right: 5%;
-  top: 7%;
-  display: inline-block;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  transition: all 1.5s;
-}*/
-
 .menu-toggle {
-  width: 40px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
   z-index: 4;
   position: fixed;
-  right: 5%;
+  right: 7%;
   top: 7%;
   display: inline-block;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
 }
-
-/*.expanded {
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  background: black;
-  opacity: .95;
-  border-radius: 0px;
-  transition: all 1.5s;
-}*/
 
 .menu-toggle:hover {
   cursor: pointer;
@@ -94,12 +70,12 @@
   height: 100%;
   z-index: 3;
   background: black;
-  opacity: .95;
+  opacity: .8;
 }
 
 .link-container {
   width: 75%;
-  height: 150px;
+  height: 45%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -119,6 +95,10 @@
   border-color: white;
 }
 
+.nav-link p {
+  font-size: 40px;
+}
+
 .blurred {
   color: grey;
   border-color: grey;
@@ -127,11 +107,11 @@
 
 .line {
   height: 10px;
-  width: 35%;
+  width: 30%;
   display: inline-block;
   border-top: .5px solid;
   border-color: inherit;;
-  transform: translateY(8px);
+  transform: translateY(20px);
 }
 
 .social-links-container {
@@ -141,8 +121,8 @@
 }
 
 .social-link {
-  height: 35px;
-  width: 35px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   border: 1px solid lightgrey;
   display: inline-block;
