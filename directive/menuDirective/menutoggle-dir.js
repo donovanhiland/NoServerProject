@@ -41,7 +41,15 @@ angular.module('portfolioApp')
               },
               // remove blurred class on hover off
               function() {
-                $('.nav-link').not('this').removeClass('blurred');
+                $('.nav-link').not(this).removeClass('blurred');
+              }
+            );
+            $('.social-link').hover(
+              function() {
+                $('.social-link').not(this).addClass('blurred');
+              },
+              function() {
+                $('.social-link').not(this).removeClass('blurred');
               }
             );
         });
