@@ -43,10 +43,10 @@ $(document).ready(function() {
           status = 'newInteration';
         }
         if(status === 'reverse') {
-          // UNCOMMENT FOR BACKSPACE ANIMATION
-          // currentSentence.splice((currentSentence.length -1), 1);
-          // typedText.text(currentSentence.join(''));
-          currentSentence = [];
+          currentSentence.splice((currentSentence.length -1), 1);
+          typedText.html(currentSentence.join('') + '<div class="cursor"></div>');
+          // UNCOMMENT FOR !NO! BACKSPACE ANIMATION
+          // currentSentence = [];
         }
         if(i === sentences.length) {
           i = 0;
