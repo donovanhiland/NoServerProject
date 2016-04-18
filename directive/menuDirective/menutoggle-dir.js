@@ -4,7 +4,7 @@ angular.module('portfolioApp')
     return {
       restrict: 'AE',
       templateUrl: 'directive/menuDirective/menutoggle-dir.html',
-      controller: function($scope) {
+      controller: function($scope, $state) {
         var menuOpen = false;
         // toggle true/false through ng-click which determines which animation to run through
         $scope.menu = function(){
@@ -17,19 +17,19 @@ angular.module('portfolioApp')
         // jquery
         $(document).ready(function() {
             $('.menu').hide();
+            if($state.current.name === 'home') {
+              $('.back-arrow').hide();
+            }
 
             // depending on whether or not the menu is open, fade the backdrop menu in or out on menu-toggle click
             $('.menu-toggle').click( function () {
                 if (menuOpen == false) {
                     $('.menu-toggle').addClass('open')
                     $('.menu').fadeIn('slow', 'swing');
-                    // $('.menu-toggle-container').addClass('expanded');
                 }
                 if (menuOpen == true) {
                     $('.menu-toggle').removeClass('open');
                     $('.menu').fadeOut('slow', 'swing');
-                    // $('.menu-toggle-container').removeClass('expanded');
-
                 }
               })
             // change color of other links when someone hovers over.

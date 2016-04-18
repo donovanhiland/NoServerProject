@@ -1,6 +1,6 @@
 .menu-toggle {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   z-index: 4;
   position: fixed;
   right: 7%;
@@ -23,14 +23,14 @@
 }
 
 .menu-toggle > div > div {
-  width: 100%;
-  height: .125em;
+  width: 3em;
+  height: 2px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   border: 1px solid #FFF;
   border-radius: 1px;
-  margin-bottom: 7px;
+  margin-bottom: 9px;
   transition: transform .5s ease;
 }
 
@@ -44,12 +44,11 @@
 }
 
 .menu-toggle > div > div:nth-child(3) {
-  width: 100%;
   transition: transform .5s ease;
 }
 
 .menu-toggle.open > div > div:nth-child(1) {
-  transform: translateY(9px) translateX(-50%) rotate(45deg);
+  transform: translateY(11px) translateX(-50%) rotate(45deg);
   transition: transform .5s ease;
 }
 
@@ -59,8 +58,49 @@
 }
 
 .menu-toggle.open > div > div:nth-child(3) {
-  width: 100%;
-  transform: translateY(-9px) translateX(-50%) rotate(-45deg);
+  transform: translateY(-11px) translateX(-50%) rotate(-45deg);
+  transition: transform .5s ease;
+}
+
+.back-arrow {
+  width: 120px;
+  height: 120px;
+  z-index: 4;
+  position: fixed;
+  left: 7%;
+  top: 7%;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.back-arrow div {
+  width: 50%;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.back-arrow div div {
+  width: 80%;
+  height: .125em;
+  border: 1px solid #FFF;
+  border-radius: 1px;
+}
+
+.back-arrow div div:nth-child(1) {
+  width: 50%;
+  border-radius: 0px;
+  transform: translateY(-8px) translateX(-10px) rotate(-35deg);
+  transition: transform .5s ease;
+}
+
+.back-arrow div div:nth-child(3) {
+  width: 50%;
+  border-radius: 0px;
+  transform: translateY(5.5px) translateX(-10px) rotate(35deg);
   transition: transform .5s ease;
 }
 
@@ -121,8 +161,8 @@
 }
 
 .social-link {
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
   border: 3px solid white;
   display: inline-block;
@@ -134,21 +174,38 @@
 }
 
 #githubicon {
-  background: url('../img/icons/github.png') center no-repeat;
+  background: url('../../img/icons/github.png') center no-repeat;
   background-size: contain;
 }
 
 #linkedinicon {
-  background: url('../img/icons/linkedin.png') center no-repeat;
+  background: url('../../img/icons/linkedin.png') center no-repeat;
   background-size: contain;
 }
 
 #facebookicon {
-  background: url('../img/icons/facebook.png') center no-repeat;
+  background: url('../../img/icons/facebook.png') center no-repeat;
   background-size: contain;
 }
 
 #emailicon {
-  background: url('../img/icons/mail.png') center no-repeat;
+  background: url('../../img/icons/mail.png') center no-repeat;
   background-size: contain;
+}
+
+@media (max-width: 700px) {
+  .menu-toggle {
+    width: 80px;
+    height: 80px;
+  }
+  .menu-toggle.open > div > div:nth-child(1) {
+    transform: translateY(11.5px) translateX(-50%) rotate(45deg);
+  }
+  .menu-toggle.open > div > div:nth-child(3) {
+    transform: translateY(-11.5px) translateX(-50%) rotate(-45deg);
+  }
+  .social-link {
+    height: 50px;
+    width: 50px;
+  }
 }
