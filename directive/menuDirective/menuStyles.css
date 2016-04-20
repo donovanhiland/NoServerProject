@@ -1,6 +1,6 @@
 .menu-toggle {
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
   z-index: 4;
   position: fixed;
   right: 7%;
@@ -15,7 +15,7 @@
 }
 
 .menu-toggle > div {
-  width: 50%;
+  width: 50px;
   margin: auto;
   position: relative;
   top: 50%;
@@ -23,12 +23,12 @@
 }
 
 .menu-toggle > div > div {
-  width: 3em;
-  height: 2px;
+  width: 2em;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   border: 1px solid #FFF;
+  background-color: white;
   border-radius: 1px;
   margin-bottom: 9px;
   transition: transform .5s ease;
@@ -48,7 +48,7 @@
 }
 
 .menu-toggle.open > div > div:nth-child(1) {
-  transform: translateY(11px) translateX(-50%) rotate(45deg);
+  transform: translateY(10px) translateX(-50%) rotate(45deg);
   transition: transform .5s ease;
 }
 
@@ -63,8 +63,8 @@
 }
 
 .back-arrow {
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
   z-index: 4;
   position: fixed;
   left: 7%;
@@ -76,7 +76,7 @@
 }
 
 .back-arrow div {
-  width: 50%;
+  width: 50px;
   margin: auto;
   position: relative;
   top: 50%;
@@ -85,22 +85,29 @@
 
 .back-arrow div div {
   width: 80%;
-  height: .125em;
+  height: 1px;
   border: 1px solid #FFF;
   border-radius: 1px;
 }
 
 .back-arrow div div:nth-child(1) {
   width: 50%;
-  border-radius: 0px;
-  transform: translateY(-8px) translateX(-10px) rotate(-35deg);
+  border-radius: 1px;
+  transform: translateY(-5.5px) translateX(-10px) rotate(-35deg);
+  transition: transform .5s ease;
+}
+
+.back-arrow div div:nth-child(2) {
+  width: 80%;
+  border-radius: 1px;
+  transform: translateY(.5px);
   transition: transform .5s ease;
 }
 
 .back-arrow div div:nth-child(3) {
   width: 50%;
-  border-radius: 0px;
-  transform: translateY(5.5px) translateX(-10px) rotate(35deg);
+  border-radius: 1px;
+  transform: translateY(6.5px) translateX(-10px) rotate(35deg);
   transition: transform .5s ease;
 }
 
@@ -161,16 +168,16 @@
 }
 
 .social-link {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 2px solid white;
   display: inline-block;
   cursor: pointer;
 }
 
 .social-link.blurred {
-  border: 3px solid grey;
+  border: 2px solid grey;
 }
 
 #githubicon {
@@ -194,18 +201,15 @@
 }
 
 @media (max-width: 700px) {
-  .menu-toggle {
-    width: 80px;
-    height: 80px;
-  }
   .menu-toggle.open > div > div:nth-child(1) {
-    transform: translateY(11.5px) translateX(-50%) rotate(45deg);
+    transform: translateY(11px) translateX(-50%) rotate(45deg);
   }
   .menu-toggle.open > div > div:nth-child(3) {
-    transform: translateY(-11.5px) translateX(-50%) rotate(-45deg);
+    transform: translateY(-11px) translateX(-50%) rotate(-45deg);
   }
   .social-link {
     height: 50px;
     width: 50px;
+    border: 2px solid white;
   }
 }

@@ -5,22 +5,26 @@ html, body {
 }
 
 .game-container {
-  width: 95%;
-  min-width: 20em;
+  width: 100%;
   height: 100vh;
-  padding-top: 7em;
-  padding-bottom: 7em;
+  padding-top: 4%;
   margin: auto;
-  background-image: url('../img/hexgreen.jpg');
+  /*background-image: url('../img/hexgreen.jpg');*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
 }
 
+/*.game-container div {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}*/
+
 .game-window {
-  width: 20em;
-  height: 20em;
+  width: 60%;
+  max-width: 570px;
   background: black;
   margin: auto;
   margin-bottom: 10px;

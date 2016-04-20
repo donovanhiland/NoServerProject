@@ -12,7 +12,7 @@ angular.module('portfolioApp', ['ui.router'])
         templateUrl: 'templates/portfolio.html',
       })
       .state('snake', {
-        url: '/jQuerySnake',
+        url: '/snake',
         templateUrl: 'templates/snakeTmpl.html'
       })
       .state('resume', {

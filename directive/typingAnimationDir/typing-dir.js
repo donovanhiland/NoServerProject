@@ -8,13 +8,13 @@ angular.module('portfolioApp')
         var sentences = [
           "a full stack website developer",
           "a foosball apprentice",
+          "Karam",
           "motivated to work hard and succeed",
           "a husband, father, and son",
           "a jungle main",
           "eager to learn",
           "always hungry",
           "interested in innovating to create value",
-          "Karam",
           "excited for new opportunity"
         ]
         var typedText = $('.text');

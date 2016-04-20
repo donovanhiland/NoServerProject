@@ -7,8 +7,13 @@ $(document).ready(function() {
   var score = 000;
   var speed = 200;
   var gameStatus = 'newgame';
+  var w = $('.game-window').width();
+  $('.game-window').css({'height': w + 'px'})
 
-
+  $(window).resize(function() {
+    w = $('.game-window').width();
+    $('.game-window').css({'height': w + 'px'})
+  })
 
   function initiateGameWindow() {
     $('.game-window').html("");
@@ -28,9 +33,13 @@ $(document).ready(function() {
   function randomFood() {
     var fRow = Math.floor(Math.random() * 19);
     var fCol = Math.floor(Math.random() * 19);
-    var foodCell = $('#cell_'+fRow+'_'+fCol);
-    foodCell.addClass("foodCell");
-    food='_'+fRow+'_'+fCol;
+    if($('#cell_'+fRow+'_'+fCol).hasClass('snakeCell')) {
+      randomFood();
+    } else {
+      var foodCell = $('#cell_'+fRow+'_'+fCol);
+      foodCell.addClass("foodCell");
+      food='_'+fRow+'_'+fCol;
+    }
   };
 
   function update() {
