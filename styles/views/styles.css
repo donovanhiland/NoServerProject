@@ -142,18 +142,16 @@ h3 {
   background-size: cover;
 }
 
-#comingsoon {
-  /*background: url('/img/projectimages/comingsoon.png') center no-repeat;
-  background-size: cover;*/
-  width: 100px;
+/*#comingsoon {
+  width: 75px;
 }
 
 #comingsoon p {
   width: 100%;
-  font-size: 30px;
+  font-size: 20px;
   margin-top: 50%;
   color: #434343;
-}
+}*/
 
 .info {
   width: 100%;
