@@ -16,7 +16,7 @@ angular.module('portfolioApp')
           "always hungry",
           "interested in innovating to create value",
           "excited for new opportunity"
-        ]
+        ];
         var typedText = $('.text');
         var i = 0;
         var j = 0;
@@ -27,7 +27,7 @@ angular.module('portfolioApp')
             var letters = '';
             typedText.append('<div class="cursor"></div>');
 
-            // ADD CURSOR BLINK
+            // ADD CURSOR BLINK?
 
             var typeInterval = setInterval(function() {
               if(status === 'newInteration') {

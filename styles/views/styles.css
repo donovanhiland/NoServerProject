@@ -172,3 +172,11 @@ h3 {
   top: 50%;
   transform: translateY(-50%);
 }
+
+.instructions {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  font-family: "Digital-7", sans-serif;
+  font-size: 20px;
+}

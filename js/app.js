@@ -18,5 +18,5 @@ angular.module('portfolioApp', ['ui.router'])
       .state('resume', {
         url: '/resume',
         templateUrl: 'templates/resumeTmpl.html'
-      })
+      });
   });
